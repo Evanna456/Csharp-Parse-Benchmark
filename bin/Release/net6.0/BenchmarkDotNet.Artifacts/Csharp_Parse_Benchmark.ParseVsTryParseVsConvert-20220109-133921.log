@@ -1,0 +1,357 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882
+// command took 2.6s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882
+// command took 3.38s and exited with 0
+// ***** Done, took 00:00:06 (6.17 sec)   *****
+// Found 3 benchmarks:
+//   ParseVsTryParseVsConvert.BParse: DefaultJob
+//   ParseVsTryParseVsConvert.BTryParse: DefaultJob
+//   ParseVsTryParseVsConvert.BConvert: DefaultJob
+
+// **************************
+// Benchmark: ParseVsTryParseVsConvert.BParse: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7d1116f-3395-4578-9696-ea86052fd882.dll" --benchmarkName "Csharp_Parse_Benchmark.ParseVsTryParseVsConvert.BParse" --job "Default" --benchmarkId 0 in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 255000.00 ns, 255.0000 us/op
+WorkloadJitting  1: 1 op, 159100.00 ns, 159.1000 us/op
+
+OverheadJitting  2: 16 op, 389400.00 ns, 24.3375 us/op
+WorkloadJitting  2: 16 op, 382900.00 ns, 23.9312 us/op
+
+WorkloadPilot    1: 16 op, 1500.00 ns, 93.7500 ns/op
+WorkloadPilot    2: 32 op, 1800.00 ns, 56.2500 ns/op
+WorkloadPilot    3: 64 op, 2700.00 ns, 42.1875 ns/op
+WorkloadPilot    4: 128 op, 3900.00 ns, 30.4688 ns/op
+WorkloadPilot    5: 256 op, 6800.00 ns, 26.5625 ns/op
+WorkloadPilot    6: 512 op, 13800.00 ns, 26.9531 ns/op
+WorkloadPilot    7: 1024 op, 24100.00 ns, 23.5352 ns/op
+WorkloadPilot    8: 2048 op, 47600.00 ns, 23.2422 ns/op
+WorkloadPilot    9: 4096 op, 93300.00 ns, 22.7783 ns/op
+WorkloadPilot   10: 8192 op, 186300.00 ns, 22.7417 ns/op
+WorkloadPilot   11: 16384 op, 451400.00 ns, 27.5513 ns/op
+WorkloadPilot   12: 32768 op, 766900.00 ns, 23.4039 ns/op
+WorkloadPilot   13: 65536 op, 1697700.00 ns, 25.9048 ns/op
+WorkloadPilot   14: 131072 op, 2981300.00 ns, 22.7455 ns/op
+WorkloadPilot   15: 262144 op, 5953300.00 ns, 22.7100 ns/op
+WorkloadPilot   16: 524288 op, 11894500.00 ns, 22.6870 ns/op
+WorkloadPilot   17: 1048576 op, 24534200.00 ns, 23.3976 ns/op
+WorkloadPilot   18: 2097152 op, 48909000.00 ns, 23.3216 ns/op
+WorkloadPilot   19: 4194304 op, 94018100.00 ns, 22.4157 ns/op
+WorkloadPilot   20: 8388608 op, 174368100.00 ns, 20.7863 ns/op
+WorkloadPilot   21: 16777216 op, 348728200.00 ns, 20.7858 ns/op
+WorkloadPilot   22: 33554432 op, 695728000.00 ns, 20.7343 ns/op
+
+OverheadWarmup   1: 33554432 op, 68251400.00 ns, 2.0341 ns/op
+OverheadWarmup   2: 33554432 op, 69378500.00 ns, 2.0676 ns/op
+OverheadWarmup   3: 33554432 op, 67431500.00 ns, 2.0096 ns/op
+OverheadWarmup   4: 33554432 op, 52281200.00 ns, 1.5581 ns/op
+OverheadWarmup   5: 33554432 op, 50751900.00 ns, 1.5125 ns/op
+OverheadWarmup   6: 33554432 op, 52252300.00 ns, 1.5572 ns/op
+OverheadWarmup   7: 33554432 op, 49760600.00 ns, 1.4830 ns/op
+
+OverheadActual   1: 33554432 op, 49908900.00 ns, 1.4874 ns/op
+OverheadActual   2: 33554432 op, 51877000.00 ns, 1.5461 ns/op
+OverheadActual   3: 33554432 op, 49924000.00 ns, 1.4879 ns/op
+OverheadActual   4: 33554432 op, 50830100.00 ns, 1.5149 ns/op
+OverheadActual   5: 33554432 op, 49753800.00 ns, 1.4828 ns/op
+OverheadActual   6: 33554432 op, 50443600.00 ns, 1.5033 ns/op
+OverheadActual   7: 33554432 op, 49733200.00 ns, 1.4822 ns/op
+OverheadActual   8: 33554432 op, 49935500.00 ns, 1.4882 ns/op
+OverheadActual   9: 33554432 op, 50003400.00 ns, 1.4902 ns/op
+OverheadActual  10: 33554432 op, 50714600.00 ns, 1.5114 ns/op
+OverheadActual  11: 33554432 op, 50488400.00 ns, 1.5047 ns/op
+OverheadActual  12: 33554432 op, 50341500.00 ns, 1.5003 ns/op
+OverheadActual  13: 33554432 op, 49287700.00 ns, 1.4689 ns/op
+OverheadActual  14: 33554432 op, 51947300.00 ns, 1.5482 ns/op
+OverheadActual  15: 33554432 op, 50110300.00 ns, 1.4934 ns/op
+
+WorkloadWarmup   1: 33554432 op, 697032400.00 ns, 20.7732 ns/op
+WorkloadWarmup   2: 33554432 op, 694585300.00 ns, 20.7003 ns/op
+WorkloadWarmup   3: 33554432 op, 691318700.00 ns, 20.6029 ns/op
+WorkloadWarmup   4: 33554432 op, 693178700.00 ns, 20.6583 ns/op
+WorkloadWarmup   5: 33554432 op, 696145100.00 ns, 20.7467 ns/op
+WorkloadWarmup   6: 33554432 op, 700789400.00 ns, 20.8852 ns/op
+WorkloadWarmup   7: 33554432 op, 700857500.00 ns, 20.8872 ns/op
+WorkloadWarmup   8: 33554432 op, 696131200.00 ns, 20.7463 ns/op
+WorkloadWarmup   9: 33554432 op, 693286800.00 ns, 20.6616 ns/op
+WorkloadWarmup  10: 33554432 op, 690432900.00 ns, 20.5765 ns/op
+WorkloadWarmup  11: 33554432 op, 692266000.00 ns, 20.6311 ns/op
+WorkloadWarmup  12: 33554432 op, 696833700.00 ns, 20.7673 ns/op
+WorkloadWarmup  13: 33554432 op, 709554500.00 ns, 21.1464 ns/op
+WorkloadWarmup  14: 33554432 op, 697496200.00 ns, 20.7870 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 33554432 op, 695765900.00 ns, 20.7354 ns/op
+WorkloadActual   2: 33554432 op, 697721600.00 ns, 20.7937 ns/op
+WorkloadActual   3: 33554432 op, 696447300.00 ns, 20.7557 ns/op
+WorkloadActual   4: 33554432 op, 702600100.00 ns, 20.9391 ns/op
+WorkloadActual   5: 33554432 op, 698779000.00 ns, 20.8252 ns/op
+WorkloadActual   6: 33554432 op, 694032100.00 ns, 20.6838 ns/op
+WorkloadActual   7: 33554432 op, 692919200.00 ns, 20.6506 ns/op
+WorkloadActual   8: 33554432 op, 707609600.00 ns, 21.0884 ns/op
+WorkloadActual   9: 33554432 op, 699130300.00 ns, 20.8357 ns/op
+WorkloadActual  10: 33554432 op, 699307100.00 ns, 20.8410 ns/op
+WorkloadActual  11: 33554432 op, 703036600.00 ns, 20.9521 ns/op
+WorkloadActual  12: 33554432 op, 695559000.00 ns, 20.7293 ns/op
+WorkloadActual  13: 33554432 op, 694232600.00 ns, 20.6897 ns/op
+WorkloadActual  14: 33554432 op, 699253000.00 ns, 20.8394 ns/op
+WorkloadActual  15: 33554432 op, 698617000.00 ns, 20.8204 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 33554432 op, 645655600.00 ns, 19.2420 ns/op
+WorkloadResult   2: 33554432 op, 647611300.00 ns, 19.3003 ns/op
+WorkloadResult   3: 33554432 op, 646337000.00 ns, 19.2623 ns/op
+WorkloadResult   4: 33554432 op, 652489800.00 ns, 19.4457 ns/op
+WorkloadResult   5: 33554432 op, 648668700.00 ns, 19.3318 ns/op
+WorkloadResult   6: 33554432 op, 643921800.00 ns, 19.1904 ns/op
+WorkloadResult   7: 33554432 op, 642808900.00 ns, 19.1572 ns/op
+WorkloadResult   8: 33554432 op, 649020000.00 ns, 19.3423 ns/op
+WorkloadResult   9: 33554432 op, 649196800.00 ns, 19.3476 ns/op
+WorkloadResult  10: 33554432 op, 652926300.00 ns, 19.4587 ns/op
+WorkloadResult  11: 33554432 op, 645448700.00 ns, 19.2359 ns/op
+WorkloadResult  12: 33554432 op, 644122300.00 ns, 19.1963 ns/op
+WorkloadResult  13: 33554432 op, 649142700.00 ns, 19.3460 ns/op
+WorkloadResult  14: 33554432 op, 648506700.00 ns, 19.3270 ns/op
+
+// AfterAll
+// Benchmark Process 3152 has exited with code 0.
+
+Mean = 19.299 ns, StdErr = 0.024 ns (0.13%), N = 14, StdDev = 0.090 ns
+Min = 19.157 ns, Q1 = 19.237 ns, Median = 19.314 ns, Q3 = 19.345 ns, Max = 19.459 ns
+IQR = 0.108 ns, LowerFence = 19.076 ns, UpperFence = 19.506 ns
+ConfidenceInterval = [19.197 ns; 19.401 ns] (CI 99.9%), Margin = 0.102 ns (0.53% of Mean)
+Skewness = 0.19, Kurtosis = 1.94, MValue = 2
+
+// **************************
+// Benchmark: ParseVsTryParseVsConvert.BTryParse: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7d1116f-3395-4578-9696-ea86052fd882.dll" --benchmarkName "Csharp_Parse_Benchmark.ParseVsTryParseVsConvert.BTryParse" --job "Default" --benchmarkId 1 in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 224600.00 ns, 224.6000 us/op
+WorkloadJitting  1: 1 op, 159500.00 ns, 159.5000 us/op
+
+OverheadJitting  2: 16 op, 414500.00 ns, 25.9062 us/op
+WorkloadJitting  2: 16 op, 646500.00 ns, 40.4062 us/op
+
+WorkloadPilot    1: 16 op, 3100.00 ns, 193.7500 ns/op
+WorkloadPilot    2: 32 op, 4100.00 ns, 128.1250 ns/op
+WorkloadPilot    3: 64 op, 2400.00 ns, 37.5000 ns/op
+WorkloadPilot    4: 128 op, 3900.00 ns, 30.4688 ns/op
+WorkloadPilot    5: 256 op, 6800.00 ns, 26.5625 ns/op
+WorkloadPilot    6: 512 op, 23600.00 ns, 46.0938 ns/op
+WorkloadPilot    7: 1024 op, 37400.00 ns, 36.5234 ns/op
+WorkloadPilot    8: 2048 op, 62000.00 ns, 30.2734 ns/op
+WorkloadPilot    9: 4096 op, 96300.00 ns, 23.5107 ns/op
+WorkloadPilot   10: 8192 op, 186400.00 ns, 22.7539 ns/op
+WorkloadPilot   11: 16384 op, 380800.00 ns, 23.2422 ns/op
+WorkloadPilot   12: 32768 op, 795500.00 ns, 24.2767 ns/op
+WorkloadPilot   13: 65536 op, 1658700.00 ns, 25.3098 ns/op
+WorkloadPilot   14: 131072 op, 3080300.00 ns, 23.5008 ns/op
+WorkloadPilot   15: 262144 op, 6418600.00 ns, 24.4850 ns/op
+WorkloadPilot   16: 524288 op, 12134800.00 ns, 23.1453 ns/op
+WorkloadPilot   17: 1048576 op, 23805100.00 ns, 22.7023 ns/op
+WorkloadPilot   18: 2097152 op, 47407000.00 ns, 22.6054 ns/op
+WorkloadPilot   19: 4194304 op, 94639900.00 ns, 22.5639 ns/op
+WorkloadPilot   20: 8388608 op, 168183000.00 ns, 20.0490 ns/op
+WorkloadPilot   21: 16777216 op, 335542800.00 ns, 19.9999 ns/op
+WorkloadPilot   22: 33554432 op, 665154700.00 ns, 19.8232 ns/op
+
+OverheadWarmup   1: 33554432 op, 69086900.00 ns, 2.0590 ns/op
+OverheadWarmup   2: 33554432 op, 70756800.00 ns, 2.1087 ns/op
+OverheadWarmup   3: 33554432 op, 69288200.00 ns, 2.0649 ns/op
+OverheadWarmup   4: 33554432 op, 55107300.00 ns, 1.6423 ns/op
+OverheadWarmup   5: 33554432 op, 52553900.00 ns, 1.5662 ns/op
+OverheadWarmup   6: 33554432 op, 51719000.00 ns, 1.5413 ns/op
+OverheadWarmup   7: 33554432 op, 51790900.00 ns, 1.5435 ns/op
+OverheadWarmup   8: 33554432 op, 51695500.00 ns, 1.5406 ns/op
+
+OverheadActual   1: 33554432 op, 53223900.00 ns, 1.5862 ns/op
+OverheadActual   2: 33554432 op, 52005900.00 ns, 1.5499 ns/op
+OverheadActual   3: 33554432 op, 51718300.00 ns, 1.5413 ns/op
+OverheadActual   4: 33554432 op, 52089400.00 ns, 1.5524 ns/op
+OverheadActual   5: 33554432 op, 51764000.00 ns, 1.5427 ns/op
+OverheadActual   6: 33554432 op, 51701800.00 ns, 1.5408 ns/op
+OverheadActual   7: 33554432 op, 51773900.00 ns, 1.5430 ns/op
+OverheadActual   8: 33554432 op, 51895500.00 ns, 1.5466 ns/op
+OverheadActual   9: 33554432 op, 52298900.00 ns, 1.5586 ns/op
+OverheadActual  10: 33554432 op, 52365100.00 ns, 1.5606 ns/op
+OverheadActual  11: 33554432 op, 51758800.00 ns, 1.5425 ns/op
+OverheadActual  12: 33554432 op, 52310400.00 ns, 1.5590 ns/op
+OverheadActual  13: 33554432 op, 51775400.00 ns, 1.5430 ns/op
+OverheadActual  14: 33554432 op, 51689200.00 ns, 1.5405 ns/op
+OverheadActual  15: 33554432 op, 51754100.00 ns, 1.5424 ns/op
+
+WorkloadWarmup   1: 33554432 op, 666108700.00 ns, 19.8516 ns/op
+WorkloadWarmup   2: 33554432 op, 667789200.00 ns, 19.9017 ns/op
+WorkloadWarmup   3: 33554432 op, 663432200.00 ns, 19.7718 ns/op
+WorkloadWarmup   4: 33554432 op, 684907000.00 ns, 20.4118 ns/op
+WorkloadWarmup   5: 33554432 op, 664968300.00 ns, 19.8176 ns/op
+WorkloadWarmup   6: 33554432 op, 666247800.00 ns, 19.8557 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 33554432 op, 662326000.00 ns, 19.7389 ns/op
+WorkloadActual   2: 33554432 op, 667695700.00 ns, 19.8989 ns/op
+WorkloadActual   3: 33554432 op, 675889900.00 ns, 20.1431 ns/op
+WorkloadActual   4: 33554432 op, 665069500.00 ns, 19.8206 ns/op
+WorkloadActual   5: 33554432 op, 667881700.00 ns, 19.9044 ns/op
+WorkloadActual   6: 33554432 op, 669565000.00 ns, 19.9546 ns/op
+WorkloadActual   7: 33554432 op, 672096600.00 ns, 20.0300 ns/op
+WorkloadActual   8: 33554432 op, 667250000.00 ns, 19.8856 ns/op
+WorkloadActual   9: 33554432 op, 671176200.00 ns, 20.0026 ns/op
+WorkloadActual  10: 33554432 op, 666245800.00 ns, 19.8557 ns/op
+WorkloadActual  11: 33554432 op, 667309200.00 ns, 19.8874 ns/op
+WorkloadActual  12: 33554432 op, 669025900.00 ns, 19.9385 ns/op
+WorkloadActual  13: 33554432 op, 669602200.00 ns, 19.9557 ns/op
+WorkloadActual  14: 33554432 op, 668264600.00 ns, 19.9158 ns/op
+WorkloadActual  15: 33554432 op, 665433400.00 ns, 19.8315 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 33554432 op, 610550600.00 ns, 18.1958 ns/op
+WorkloadResult   2: 33554432 op, 615920300.00 ns, 18.3559 ns/op
+WorkloadResult   3: 33554432 op, 613294100.00 ns, 18.2776 ns/op
+WorkloadResult   4: 33554432 op, 616106300.00 ns, 18.3614 ns/op
+WorkloadResult   5: 33554432 op, 617789600.00 ns, 18.4116 ns/op
+WorkloadResult   6: 33554432 op, 620321200.00 ns, 18.4870 ns/op
+WorkloadResult   7: 33554432 op, 615474600.00 ns, 18.3426 ns/op
+WorkloadResult   8: 33554432 op, 619400800.00 ns, 18.4596 ns/op
+WorkloadResult   9: 33554432 op, 614470400.00 ns, 18.3126 ns/op
+WorkloadResult  10: 33554432 op, 615533800.00 ns, 18.3443 ns/op
+WorkloadResult  11: 33554432 op, 617250500.00 ns, 18.3955 ns/op
+WorkloadResult  12: 33554432 op, 617826800.00 ns, 18.4127 ns/op
+WorkloadResult  13: 33554432 op, 616489200.00 ns, 18.3728 ns/op
+WorkloadResult  14: 33554432 op, 613658000.00 ns, 18.2884 ns/op
+
+// AfterAll
+// Benchmark Process 6296 has exited with code 0.
+
+Mean = 18.358 ns, StdErr = 0.020 ns (0.11%), N = 14, StdDev = 0.076 ns
+Min = 18.196 ns, Q1 = 18.320 ns, Median = 18.359 ns, Q3 = 18.408 ns, Max = 18.487 ns
+IQR = 0.087 ns, LowerFence = 18.189 ns, UpperFence = 18.539 ns
+ConfidenceInterval = [18.273 ns; 18.444 ns] (CI 99.9%), Margin = 0.085 ns (0.47% of Mean)
+Skewness = -0.29, Kurtosis = 2.53, MValue = 2
+
+// **************************
+// Benchmark: ParseVsTryParseVsConvert.BConvert: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7d1116f-3395-4578-9696-ea86052fd882.dll" --benchmarkName "Csharp_Parse_Benchmark.ParseVsTryParseVsConvert.BConvert" --job "Default" --benchmarkId 2 in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 219700.00 ns, 219.7000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.OverflowException: Value was either too large or too small for an Int32.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Convert.ToInt32(String value)
+   at Csharp_Parse_Benchmark.ParseVsTryParseVsConvert.BConvert() in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\Program.cs:line 38
+   at BenchmarkDotNet.Autogenerated.Runnable_2.WorkloadActionNoUnroll(Int64 invokeCount) in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882\d7d1116f-3395-4578-9696-ea86052fd882.notcs:line 1956
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(IHost host, String benchmarkName) in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882\d7d1116f-3395-4578-9696-ea86052fd882.notcs:line 1633
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in D:\My Documents\Workshop\Csharp\Csharp-Parse-Benchmark\bin\Release\net6.0\d7d1116f-3395-4578-9696-ea86052fd882\d7d1116f-3395-4578-9696-ea86052fd882.notcs:line 53
+// AfterAll
+// Benchmark Process 5676 has exited with code -1.
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Csharp_Parse_Benchmark.ParseVsTryParseVsConvert-report.csv
+  BenchmarkDotNet.Artifacts\results\Csharp_Parse_Benchmark.ParseVsTryParseVsConvert-report-github.md
+  BenchmarkDotNet.Artifacts\results\Csharp_Parse_Benchmark.ParseVsTryParseVsConvert-report.html
+
+// * Detailed results *
+ParseVsTryParseVsConvert.BParse: DefaultJob
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 19.299 ns, StdErr = 0.024 ns (0.13%), N = 14, StdDev = 0.090 ns
+Min = 19.157 ns, Q1 = 19.237 ns, Median = 19.314 ns, Q3 = 19.345 ns, Max = 19.459 ns
+IQR = 0.108 ns, LowerFence = 19.076 ns, UpperFence = 19.506 ns
+ConfidenceInterval = [19.197 ns; 19.401 ns] (CI 99.9%), Margin = 0.102 ns (0.53% of Mean)
+Skewness = 0.19, Kurtosis = 1.94, MValue = 2
+-------------------- Histogram --------------------
+[19.108 ns ; 19.498 ns) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+ParseVsTryParseVsConvert.BTryParse: DefaultJob
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 18.358 ns, StdErr = 0.020 ns (0.11%), N = 14, StdDev = 0.076 ns
+Min = 18.196 ns, Q1 = 18.320 ns, Median = 18.359 ns, Q3 = 18.408 ns, Max = 18.487 ns
+IQR = 0.087 ns, LowerFence = 18.189 ns, UpperFence = 18.539 ns
+ConfidenceInterval = [18.273 ns; 18.444 ns] (CI 99.9%), Margin = 0.085 ns (0.47% of Mean)
+Skewness = -0.29, Kurtosis = 2.53, MValue = 2
+-------------------- Histogram --------------------
+[18.194 ns ; 18.528 ns) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+ParseVsTryParseVsConvert.BConvert: DefaultJob
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
+Intel Core i7-8750H CPU 2.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.101
+  [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+
+
+|    Method |     Mean |    Error |   StdDev |
+|---------- |---------:|---------:|---------:|
+|    BParse | 19.30 ns | 0.102 ns | 0.090 ns |
+| BTryParse | 18.36 ns | 0.085 ns | 0.076 ns |
+|  BConvert |       NA |       NA |       NA |
+
+Benchmarks with issues:
+  ParseVsTryParseVsConvert.BConvert: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+
+// * Hints *
+Outliers
+  ParseVsTryParseVsConvert.BParse: Default    -> 1 outlier  was  removed (21.09 ns)
+  ParseVsTryParseVsConvert.BTryParse: Default -> 1 outlier  was  removed, 2 outliers were detected (19.74 ns, 20.14 ns)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:40 (40.74 sec), executed benchmarks: 3
+
+Global total time: 00:00:46 (46.92 sec), executed benchmarks: 3
+// * Artifacts cleanup *
