@@ -1,13 +1,6 @@
-﻿namespace Csharp_Parse_Benchmark.Helpers
+﻿namespace Csharp_Parse_Benchmark.Helpers.StringRandom
 {
-    internal interface IStringRandom
-    {
-        string generateAlphanumeric(int number);
-
-        string generateNumber(int number);
-    }
-
-    public class StringRandom : IStringRandom
+    public class StringRandom: IStringRandom
     {
         public string generateAlphanumeric(int number)
         {

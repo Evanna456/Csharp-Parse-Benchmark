@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
-using Csharp_Parse_Benchmark.Helpers;
+using Csharp_Parse_Benchmark.Helpers.StringRandom;
 
 namespace Csharp_Parse_Benchmark
 {

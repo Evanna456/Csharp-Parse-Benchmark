@@ -10,6 +10,6 @@ Intel Core i7-8750H CPU 2.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical 
 ```
 |    Method |     Mean |    Error |   StdDev |
 |---------- |---------:|---------:|---------:|
-|    BParse | 15.65 ns | 0.055 ns | 0.051 ns |
-| BTryParse | 15.45 ns | 0.058 ns | 0.051 ns |
-|  BConvert | 17.40 ns | 0.039 ns | 0.035 ns |
+|    BParse | 17.19 ns | 0.130 ns | 0.122 ns |
+| BTryParse | 18.11 ns | 0.110 ns | 0.103 ns |
+|  BConvert | 17.21 ns | 0.108 ns | 0.101 ns |
