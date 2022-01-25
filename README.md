@@ -17,3 +17,7 @@ C# is a general-purpose, multi-paradigm programming language. C# encompasses sta
 
 * [Github](https://github.com/dotnet/csharplang)
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+
+## License
+
+Csharp-Parse-Benchmark is licensed under [MIT](https://choosealicense.com/licenses/mit/)
