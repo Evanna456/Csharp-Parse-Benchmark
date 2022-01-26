@@ -20,7 +20,7 @@ C# is a general-purpose, multi-paradigm programming language. C# encompasses sta
 
 ## Author's Notes
 
-<p align="left">TryParse is faster.</p>
+<p align="left">Conclusion: TryParse is faster.</p>
 
 ## License
 
