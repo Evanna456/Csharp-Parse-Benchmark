@@ -1,6 +1,6 @@
 ## About Csharp-Parse-Benchmark
 
-Benchmark for Parse vs TryParse vs Convert from String to Int.
+Benchmark between Parse, TryParse and Convert from String to Int.
 
 ## Usage
 
